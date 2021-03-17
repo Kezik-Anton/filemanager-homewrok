@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    color: #222;
+    background: #efefef;
+    font: 13px Tahoma, Arial, sans-serif;
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    font: 13px Tahoma, Arial, sans-serif;
+}
+
+img {
+    margin-right: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+td>a {
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 4px 7px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    background: #fff;
+    white-space: nowrap;
+}
+
+th {
+    text-align: left;
+}
+
+tr:hover td {
+    background-color: #f5f5f5;
+}
+
+input,
+textarea {
+    padding: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+select {
+    padding: 5px;
+}
+
+.container {
+    max-width: 1000px;
+    min-width: 400px;
+    margin: 10px auto;
+}
+
+.w_size {
+    width: 10%;
+}
+
+.w_date {
+    width: 12%;
+}
+
+.w_action {
+    width: 13%;
+}
+
+.action {
+    padding: 4px 7px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+#greyback {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#window {
+    width: 400px;
+    min-height: 75px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 210px);
+    margin: auto;
+    background: #fff;
+}
+
+#greyback:target {
+    display: block;
+}
+
+button {
+    outline: none;
+}
+
+button,
+.close {
+    display: inline-block;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    background: #f2f2f2;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover,
+.close:hover {
+    background: #ffcfb4;
+}
+
+.file-edit {
+    width: 900px !important;
+    max-height: 600px !important;
+    left: calc(50% - 460px) !important;
+}
