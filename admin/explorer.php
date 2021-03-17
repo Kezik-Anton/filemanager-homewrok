@@ -25,7 +25,7 @@ if ($fileToRename = $_GET['rename'] ?? false) {
 
     if ($newName = $_POST['newName'] ?? false) :
 
-        if (preg_match('/^[-a-zA-Zа-яА-ЯёЁ0-9 _]+?$/ui', $arrName[0])) {
+        if (preg_match('/^[-a-zA-Zа-яА-ЯёЁ0-9 _]+$/ui', $_POST['newName'])) {
             rename($fileToRename, $dir . '\\' . $newName . '.' . $arrName[1]);
         }
         reloadPage($dir);;
@@ -82,7 +82,7 @@ if ($newFile = $_POST['newFile'] ?? false) {
 }   
 
 if ($newFile = $_POST['newDir'] ?? false) {
-    if (preg_match('/^[-a-zA-Zа-яА-ЯёЁ0-9 _\.]+$/ui', $newFile)) {
+    if (preg_match('/^[-a-zA-Zа-яА-ЯёЁ0-9 _]+$/ui', $newFile)) {
 
         $newFile = $dir . '\\' . $newFile;
 
